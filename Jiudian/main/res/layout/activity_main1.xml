@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.toshiba.jiudian.MainActivity1">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/myMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout">
+    </com.amap.api.maps.MapView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_icon" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:background="@drawable/edit_shape"
+            android:drawableLeft="@drawable/search"
+            android:hint="请输入位置、酒店名"
+            android:textAlignment="center"
+            android:textColorHint="#9d9d9d"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/all_info"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bt_radio_white"
+            android:text="全部"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/cheap_info"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bt_radio_white"
+            android:text="经济型"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/comfort_info"
+            android:layout_width="70dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bt_radio_white"
+            android:text="舒适型"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/expensive_info"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_radio_white"
+            android:text="豪华型"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <!-- 搜索结果显示-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:id="@+id/result_search">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_marginTop="8dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/room_2"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="佛山南海华美达酒店"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥188"
+                        android:textColor="#ff3232"
+                        android:textSize="25dp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="起"
+                        android:textColor="#9d9d9d"
+                        android:textSize="12dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="3dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.8分 21条评论"
+                    android:textSize="10dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="2.5km"
+                    android:textSize="12dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详情    〉"
+                    android:textColor="#22a2fb"
+                    android:textSize="12dp"
+                    android:layout_gravity="right|bottom"
+                    android:gravity="right"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_radio_white"
+            android:text="到这里"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_radio_white"
+            android:text="打电话"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/book"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_radio_white"
+            android:text="下订单"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

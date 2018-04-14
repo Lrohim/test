@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="24dp"
+    app:contentPaddingLeft="10dp"
+    app:contentPaddingBottom="10dp"
+    app:contentPaddingTop="10dp"
+    app:contentPadding="6dp"
+    app:contentPaddingRight="10dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/timg"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="#FFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tmp_min"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="63dp"
+            android:layout_toLeftOf="@+id/date"
+            android:layout_toStartOf="@+id/date"
+            android:text="TextView"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/tmp_max"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tmp_min"
+            android:layout_alignBottom="@+id/tmp_min"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_toEndOf="@+id/date"
+            android:layout_toRightOf="@+id/date"
+            android:text="TextView"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tmp_min"
+            android:layout_centerHorizontal="true"
+            android:text="←温度→"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="日期"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/fuck"
+            android:layout_width="wrap_content"
+            android:textColor="#FFF"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="96dp"
+            android:layout_toLeftOf="@+id/date"
+            android:layout_toStartOf="@+id/date"
+            android:text="风力:"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/wind_spd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_alignTop="@+id/fuck"
+            android:layout_marginLeft="29dp"
+            android:textColor="#FFF"
+            android:layout_marginStart="29dp"
+            android:text="TextView"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/wind_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="TextView"
+            android:textSize="30dp"
+            android:textColor="#FFF"
+            android:layout_below="@+id/fuck"
+            android:layout_alignLeft="@+id/cond"
+            android:layout_alignStart="@+id/cond" />
+
+        <TextView
+            android:id="@+id/cond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fuck"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFF"
+            android:layout_marginTop="116dp"
+            android:text="TextView"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/wind_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="TextView"
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            android:layout_below="@+id/cond"
+            android:layout_alignLeft="@+id/cond"
+            android:layout_alignStart="@+id/cond" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

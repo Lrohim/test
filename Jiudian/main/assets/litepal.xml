@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Hotel"></dbname>
+
+    <version value="1"></version>
+
+    <list>
+        <mapping class="com.example.toshiba.jiudian.DBhotel"></mapping>
+        <mapping class="com.example.toshiba.jiudian.DBrecord"></mapping>
+        <mapping class="com.example.toshiba.jiudian.DBroom"></mapping>
+    </list>
+</litepal>
