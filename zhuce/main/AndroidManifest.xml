@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toshiba.zhuce">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="渴了吗"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+       <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".LogIn" />
+        <activity android:name=".MyInf" />
+        <activity android:name=".Recond">
+        </activity>
+        <activity android:name=".unlogin" >
+        </activity>
+        <activity android:name=".Recond_show"></activity>
+        <activity android:name=".Recond_null"></activity>
+        <activity android:name=".Goodslist_show"></activity>
+        <activity android:name=".showlist_null"></activity>
+        <activity android:name=".ShowSearch"></activity>
+        <activity android:name=".Merchant_Activity"></activity>
+        <activity android:name=".Search_null"></activity>
+        <activity android:name=".MainActivity1" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+    </application>
+
+</manifest>

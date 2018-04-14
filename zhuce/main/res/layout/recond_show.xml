@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Recond_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="74dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="53dp"
+            android:text="TextView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/Recond_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Recond_id"
+            android:layout_alignStart="@+id/Recond_id"
+            android:layout_below="@+id/Recond_id"
+            android:layout_marginTop="22dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Recond_goodsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Recond_time"
+            android:layout_alignStart="@+id/Recond_time"
+            android:layout_below="@+id/Recond_time"
+            android:layout_marginTop="26dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Recond_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="59dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginRight="75dp"
+            android:textAlignment="center"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Recond_sum"
+            android:layout_alignBottom="@+id/Recond_sum"
+            android:layout_marginLeft="59dp"
+            android:layout_marginStart="59dp"
+            android:layout_toEndOf="@+id/textView12"
+            android:layout_toRightOf="@+id/textView12"
+            android:text="元" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Recond_sum"
+            android:layout_toLeftOf="@+id/Recond_sum"
+            android:layout_toStartOf="@+id/Recond_sum"
+            android:text="共计:" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Recond_id"
+            android:layout_alignBottom="@+id/Recond_id"
+            android:layout_toLeftOf="@+id/Recond_time"
+            android:layout_toStartOf="@+id/Recond_time"
+            android:text="订单号:    " />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Recond_time"
+            android:layout_toLeftOf="@+id/Recond_time"
+            android:layout_toStartOf="@+id/Recond_time"
+            android:text="成交时间:" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Recond_goodsname"
+            android:layout_toLeftOf="@+id/Recond_goodsname"
+            android:layout_toStartOf="@+id/Recond_goodsname"
+            android:text="商品详情:" />
+    </RelativeLayout>
+</LinearLayout>

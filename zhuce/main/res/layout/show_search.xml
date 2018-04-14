@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/goods_img"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp"
+            app:srcCompat="@drawable/appletea" />
+
+        <TextView
+            android:id="@+id/good_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/goods_img"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="34dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/good_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_alignBaseline="@+id/good_id"
+            android:layout_alignBottom="@+id/good_id"
+            android:layout_alignLeft="@+id/good_resource"
+            android:layout_alignStart="@+id/good_resource" />
+
+        <TextView
+            android:id="@+id/good_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_below="@+id/good_id"
+            android:layout_alignLeft="@+id/good_id"
+            android:layout_alignStart="@+id/good_id"
+            android:layout_marginTop="59dp" />
+
+        <TextView
+            android:id="@+id/good_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_alignBaseline="@+id/good_stock"
+            android:layout_alignBottom="@+id/good_stock"
+            android:layout_alignLeft="@+id/good_name"
+            android:layout_alignStart="@+id/good_name" />
+
+        <TextView
+            android:id="@+id/good_resource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/goods_img"
+            android:layout_alignEnd="@+id/goods_img"
+            android:layout_marginBottom="30dp" />
+    </RelativeLayout>
+</LinearLayout>

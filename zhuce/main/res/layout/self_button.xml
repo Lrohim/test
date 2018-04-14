@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/com.example.toshiba.zhuce"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.toshiba.zhuce.SoreButton
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#ffffff"
+        android:id="@+id/soreButton"
+        app:SoreRadioSelect="@drawable/radio1"
+        app:SoreRadioUnselected="@drawable/radio2"
+        app:SoreDistance="20"
+        ></com.example.toshiba.zhuce.SoreButton>
+
+</LinearLayout>

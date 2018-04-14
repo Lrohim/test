@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <ImageButton
+            android:id="@+id/merchant_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/merchant_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/merchant_name"
+            android:layout_alignStart="@+id/merchant_name"
+            android:layout_below="@+id/merchant_name"
+            android:layout_marginTop="13dp"
+            android:textColor="#989898"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/merchant_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/merchant_sale"
+            android:layout_alignStart="@+id/merchant_sale"
+            android:layout_below="@+id/merchant_sale"
+            android:layout_marginTop="22dp"
+            android:textColor="#9b9b9b"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/merchant_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#ff5656"
+            android:layout_alignTop="@+id/merchant_base"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp" />
+
+        <Button
+            android:id="@+id/merchant_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加至购物车"
+            android:background="@drawable/border_line_while"
+            android:layout_alignTop="@+id/merchant_name"
+            android:layout_alignRight="@+id/merchant_time"
+            android:layout_alignEnd="@+id/merchant_time" />
+    </RelativeLayout>
+</LinearLayout>
