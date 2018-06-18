@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>发现</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/jquery.mobile.min.css"/>
+    <script src="../script/jquery-2.1.4.min.js"></script>
+    <script src="../script/jquery.mobile.min.js"></script>
+
+    <link rel="stylesheet" href="../css/jquery.hiSlider.min.css">
+    <style>
+        .ui-grid-a .ui-block-a{
+          width:48%;
+          height:20%;
+        }
+        .ui-grid-a .ui-block-b{
+          height: 10%;
+          width:48%;
+          margin: 2%;
+        }
+        .midImage{
+          width: 100%;
+          height: 100%;
+          margin-top: 3%;
+          margin-bottom: 3%;
+        }
+        .ul .il{
+          text-align: left;
+        }
+        .discusstext{
+          color: grey;
+        }
+        .hiSlider{
+            overflow: hidden;
+            height: auto;
+            width: 100%;
+            background: #eee;
+        }
+        .slider{
+          width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+  <ul class="hiSlider">
+      <li data-title="开始永远都不算晚" class="hiSlider-item"><img class="slider" src="../image/1.png" ></li>
+      <li data-title="早起鸟儿有虫吃" class="hiSlider-item"><img class="slider" src="../image/2.png" ></li>
+      <li data-title="赠送魔法宝典" class="hiSlider-item"><img class="slider" src="../image/3.png" ></li>
+      <li data-title="推理入门，限时5折" class="hiSlider-item"><img class="slider" src="../image/4.png" ></li>
+      <li data-title="科学背单词，知根知底" class="hiSlider-item"><img class="slider" src="../image/5.png"></li>
+  </ul>
+  <fieldset class="ui-grid-a"  >
+    <div class="ui-block-a">
+      <a href="#">
+      <img src="../image/discuss.jpg" width="100%" height="100%"/>
+      <p>论坛</p>
+    </a>
+    </div>
+    <div class="ui-block-b">
+      <a href="#">
+      <img src="../image/SRoom.jpg" width="100%" height="100%"/>
+      <p>自习室</p>
+    </a>
+    </div>
+    <div class="ui-block-b">
+      <a href="#">
+      <img src="../image/group.jpg" width="100%" height="100%"/>
+      <p>小组</p>
+    </a>
+    </div>
+  </fieldset>
+  <a href="#" class="midImage">
+  <img width="100%" src="../image/advertisement.jpg" />
+  </a>
+  <h4>最新动态<img src="../image/new.png"/></h4>
+  <ul data-role="listview" >
+    <li><a href="#">
+      <img src="../image/0001.png"/>
+      <h5>急急急！！！HELP!</h5>
+      <p class="discusstext"><img src="../image/news.png" />
+      23| 23分钟前</p></a></li>
+    <li><a href="#">
+        <img src="../image/0002.png"/>
+        <h5>use固定搭配</h5>
+        <p class="discusstext"><img src="../image/news.png" />
+        2| 3分钟前</p></a></li>
+    <li><a href="#">
+          <img src="../image/0003.png"/>
+          <h5>求大神帮忙！</h5>
+          <p class="discusstext"><img src="../image/news.png" />
+          10| 40分钟前</p></a></li>
+      <li><a href="#">
+                <img src="../image/0004.png"/>
+                <h5>福利贴！！！</h5>
+                <p class="discusstext"><img src="../image/news.png" />
+                100| 20分钟前</p></a></li>
+  </ul>
+
+  <script src="../script/jquery.hiSlider.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.hiSlider').hiSlider({
+        isShowTitle:true,
+        isAuto:true,
+        intervalTime: 2000,
+        //向左滑动回调
+        onSwipeLeft: $.noop,
+        //向右滑动回调
+        onSwipeRight: $.noop,
+    });
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+      <link rel="stylesheet" href="../css/jquery.mobile.min.css"/>
+      <script src="../script/jquery-2.1.4.min.js"></script>
+      <script src="../script/jquery.mobile.min.js"></script>
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> -->
+    <style>
+        .empty{ text-align: center; padding: 120px 0; }
+    </style>
+</head>
+
+<body>
+  <div id="main" class="flex-con">
+    <div data-role="content">
+      <h1>acme</h1>
+      <!-- <p>n.最高点，顶点，极点，极盛时期
+      <p>Acme：英式提醒螺纹（定焦为29°)
+      <p>同义词：top,zenith
+      <p>反义词:low,nadir -->
+  <fieldset data-role="controlgroup">
+	<input type="radio" name="answer" id="FirstA" value="1"/>
+	<label for="FirstA">A.最高点，顶点，极点</label>
+	<input type="radio" name="answer" id="FirstB" value="2" />
+	<label for="FirstB">B.团灭，投吧</label>
+  <input type="radio" name="answer" id="FirstC" value="3"/>
+  <label for="FirstC">C.酸的，很酸的，超酸的</label>
+  <input type="radio" name="answer" id="FirstD" value="4" />
+  <label for="FirstD">D.不知道，不清楚，不明白，不理解</label>
+  </fieldset>
+
+    </div>
+
+    <div data-role="footer" data-position="fixed"  >
+      <div data-role="navbar"  >
+        <ul>
+          <li>
+            <a id="chat" href="#dialog"  data-rel="popup" data-iconshadow="false"  >下一个</a>
+
+            <div data-role="popup" id="dialog" data-overlay-theme="b" data-theme="b"
+            data-dismissible="false" style="max-width:400px" data-position-to="window">
+              <div role="main" >
+                <h3 class="ui-title">确定提交答案？</h3>
+                <a href="#" data-rel="back" >取消</a>
+                <a href="word2.html" data-rel"back" data-transition="flow">确定</a>
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<script>
+  $(document).on("swiperight", ".main", function () {
+      window.location.href='word2.html';
+  });
+</script>
+
+</body>
+</html>

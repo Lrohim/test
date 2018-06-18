@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/jquery.mobile.min.css"/>
+    <script src="../script/jquery-2.1.4.min.js"></script>
+    <script src="../script/jquery.mobile.min.js"></script>
+    <style>
+        .divDisplay{display:block;width:100%;float: left;  }
+    </style>
+</head>
+<body>
+<div data-role="page" id="pageone">
+<form action="#" method="post">
+<div class="divDisplay">
+  <label for="name" >用户名</label>
+  <input type="text" name="name" id="name" data-clear-btn="true"/>
+  <label for="password" >密码</label>
+  <input type="password" name="password" id="password" data-clear-btn="true"/>
+  <label for="gender">性别</label>
+  <select data-role="slider" name="gender" id="gender">
+    <option value="on">男</option>
+    <option value="off">女</option>
+  </select>
+  <label for="birthday">生日</label>
+  <input type="date" data-role="databox" name="birthday" id="birthday" />
+  <label for="wordStorage">词汇量</label>
+  <input type="range" name="wordStorage" id="wordStorage" min="0"
+  max="30000" value="2000"/>
+  <a href="login.html" data-role="button" id="regisrer">注册</a>
+</div>
+
+
+</form>
+</div>
+</body>
+</html>
